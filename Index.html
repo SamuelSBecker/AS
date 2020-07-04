@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="Style.css">
+    <title>AS</title>
+</head>
+<body>
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <h1>Cosmics</h1>
+            </div>
+            <div class="col-md-1 center">
+                <button type="button" class="btn btn-secundary" onclick="onClick('Home')">Home</button>
+            </div>
+            <div class="col-md-1 center">
+                <button type="button" class="btn btn-secundary" onclick="onClick('HQs')">HQs</button>
+            </div>
+            <div class="col-md-1 center">
+                <button type="button" class="btn btn-secundary" onclick="onClick('Novidades')">Novidades</button>
+            </div>
+            <div class="col-md-5"></div>
+            <div class="col-md-1" style="background-color: blue; color: white; border-radius: 0.5em; height: 1%; margin-top:1.2%;"><span>Entrar</span></div>
+            <div class="col-md-1" style="background-color: white; color:gray; border-radius: 0.5em; height: 1%; margin-top: 1.2%;"><span>Cadastrar</span></div>
+        </div>
+    </header>
+    <br>
+    <aside id="view"></aside>
+
+<!--Script da Home-->
+
+    <script type="text/html" id="Home">
+        <div class="d-flex justify-content-center BG">
+            <img onclick="Leitura('Ceifa')" src="imagens/Ceifa.jpg" alt="">
+            <img onclick="Leitura('Ledd')" src="imagens/L'edd.jpg" alt="">
+            <img onclick="Leitura('Boku')" src="imagens/Boku no Hero.jpg" alt="">
+            <img onclick="Leitura('Avatar')" src="imagens/Avatar.jpg" alt="">
+        </div>
+        <br>
+        <div class="d-flex justify-content-center BG-2">
+            <H1 style="background-color:black; color:white; width:100%; margin: 1% 0 1% 1%; text-align: center; padding-top: 12%">HQs</H1>
+            <img src="imagens/Ceifa.jpg" style="margin-left: 5%;" alt="">
+            <img src="imagens/L'edd.jpg" alt="">
+            <img src="imagens/Boku no Hero.jpg" alt="">
+        </div>
+        <br>
+        <div style="margin-bottom: -5%;" class="d-flex justify-content-center BG">
+            <H1 style="background-color:black; color:white; width:54%; margin: 1% 2% 4.2% 1%; text-align: center; padding-top: 18%">Novidades</H1>
+            <div>
+                <div onclick="News('new-1')" style="margin-right:2%; max-height:40%;" class="news d-flex justify-content-start">
+                    <img class="i-news" style="width:20%;" src="imagens/Ceifa.jpg" alt="">
+                    <article class="tex">Lorem ipsum dolor sente-se no meio, consectetur elip adipiscing. 
+                    Vivamus lacus mauris, condimento ac risus eget, fringilla vestibulum lorem. 
+                    Nunc mollis turpis tellus, vitae sagittis leo.</article>   
+                </div>
+                <div onclick="News('new-2')" style="margin-right:2%; max-height:40%;" class="news d-flex justify-content-start">
+                    <img class="i-news" style="width:20%;" src="imagens/Avatar.jpg" alt="">
+                    <article class="tex">Lorem ipsum dolor sente-se no meio, consectetur elip adipiscing. 
+                        Vivamus lacus mauris, condimento ac risus eget, fringilla vestibulum lorem. 
+                        Nunc mollis turpis tellus, vitae sagittis leo.</article>    
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <!--Script da pagina HQs-->
+
+    <script type="text/HTML" id="HQs">
+    <H1 style="text-align:center; color:white;" class="BG-2">Aproveite nossas HQS</H1>
+    <div class="d-flex justify-content-center BG">
+        <img onclick="Leitura('Ceifa')" src="imagens/Ceifa.jpg" alt="">
+        <img onclick="Leitura('Ledd')" src="imagens/L'edd.jpg" alt="">
+        <img onclick="Leitura('Boku')" src="imagens/Boku no Hero.jpg" alt="">
+        <img onclick="Leitura('Avatar')" src="imagens/Avatar.jpg" alt="">
+    </div>
+    <br>
+    <div class="d-flex justify-content-center BG-2">
+        <img onclick="Leitura('Avatar')" src="imagens/Avatar.jpg" alt="">
+        <img onclick="Leitura('Ledd')" src="imagens/L'edd.jpg" alt="">
+        <img onclick="Leitura('Ceifa')" src="imagens/Ceifa.jpg" alt="">
+        <img onclick="Leitura('Boku')" src="imagens/Boku no Hero.jpg" alt="">
+    </div>
+    <br>
+    <div class="d-flex justify-content-center BG">
+        <img onclick="Leitura('Ceifa')" src="imagens/Ceifa.jpg" alt="">
+        <img onclick="Leitura('Ledd')" src="imagens/L'edd.jpg" alt="">
+        <img onclick="Leitura('Boku')" src="imagens/Boku no Hero.jpg" alt="">
+        <img onclick="Leitura('Avatar')" src="imagens/Avatar.jpg" alt="">
+    </div>
+    <br>
+    <div class="d-flex justify-content-center BG-2">
+        <img onclick="Leitura('Avatar')" src="imagens/Avatar.jpg" alt="">
+        <img onclick="Leitura('Ledd')" src="imagens/L'edd.jpg" alt="">
+        <img onclick="Leitura('Ceifa')" src="imagens/Ceifa.jpg" alt="">
+        <img onclick="Leitura('Boku')" src="imagens/Boku no Hero.jpg" alt="">
+    </div>
+    </script>
+    <br>
+    <script type="text/javascript" src="Script.js"></script>
+
+    <!--Scripts da pagina de leitura-->
+
+    <!--Script Leitura Ceifa-->
+    <script type="text/HTML" id="Ceifa">
+        <div class="leitura">
+            <img class="pag" src="imagens/Ceifa.jpg" alt="">
+            <br>
+            <img class="pag" src="imagens/Ceifa/Ceifa-1.png" alt="">
+            <br>
+            <img class="pag" src="imagens/Ceifa/Ceifa-2.png" alt="">
+            <br>
+            <img class="pag" src="imagens/Ceifa/Ceifa-3.png" alt="">
+            <br>
+            <img class="pag" src="imagens/Ceifa/Ceifa-4.png" alt="">
+        </div>
+    </script>
+
+    <!--Script leitura Avatar-->
+    <script type="text/HTML" id="Avatar">
+        <div class="leitura">
+            <img class="pag" src="imagens/Avatar.jpg" alt="">
+            <br>
+            <img class="pag" src="imagens/Avatar/Avatar-1.jpg" alt="">
+            <br>
+            <img class="pag" src="imagens/Avatar/Avatar-2.jpg" alt="">
+            <br>
+            <img class="pag" src="imagens/Avatar/Avatar-3.jpg" alt="">
+            <br>
+            <img class="pag" src="imagens/Avatar/Avatar-4.jpg" alt="">
+            <br>
+            <hr style="background-color: rgb(22, 22, 22);">
+        </div>
+    </script>
+
+
+    <!--Script leitura Ledd-->
+
+    <script type="text/HTML" id="Ledd">
+        <div class="leitura">
+            <img class="pag" src="imagens/L'edd.jpg" alt="">
+            <br>
+            <img class="pag" src="imagens/L'edd/ledd-1.jpg" alt="">
+            <br>
+            <img class="pag" src="imagens/L'edd/ledd-2.jpg" alt="">
+            <br>
+            <img class="pag" src="imagens/L'edd/ledd-3.jpg" alt="">
+            <br>
+            <img class="pag" src="imagens/L'edd/ledd-4.jpg" alt="">
+            <br>
+        </div>
+    </script>
+
+    <!--Script leitura Boku no Hero-->
+
+    <script type="text/HTML" id="Boku">
+        <div class="leitura">
+            <img class="pag" src="imagens/Boku no Hero.jpg" alt="">
+            <br>
+            <img class="pag" src="imagens/Boku/Boku-1.png" alt="">
+            <br>
+            <img class="pag" src="imagens/Boku/Boku-2.jpg" alt="">
+            <br>
+            <img class="pag" src="imagens/Boku/Boku-3.png" alt="">
+            <br>
+            <img class="pag" src="imagens/Boku/Boku-4.jpg" alt="">
+            <br>
+        </div>
+    </script>
+
+    <!--Script Novidades-->
+
+    <script type="text/HTML" id="Novidades">
+        <!--Noticias linha 1-->
+        <div class="row BG">
+            <span class="col-md-1"></span>
+            <div onclick="News('new-1')" class="space news col-md-4 d-flex justify-content-start">
+                <img class="i-news" src="imagens/Ceifa.jpg" alt="">
+                <article class="tex">Lorem ipsum dolor sente-se no meio, consectetur elip adipiscing. 
+                Vivamus lacus mauris, condimento ac risus eget, fringilla vestibulum lorem. 
+                Nunc mollis turpis tellus, vitae sagittis leo.</article>   
+            </div>
+            <span class="col-md-1"></span>
+            <div onclick="News('new-2')" class="news col-md-4 d-flex justify-content-start">
+                <img class="i-news" src="imagens/Avatar.jpg" alt="">
+                <article class="tex">Lorem ipsum dolor sente-se no meio, consectetur elip adipiscing. 
+                    Vivamus lacus mauris, condimento ac risus eget, fringilla vestibulum lorem. 
+                    Nunc mollis turpis tellus, vitae sagittis leo.</article>    
+            </div>
+            <span class="col-md-2"></span>
+        </div>
+
+        <!--Noticias linha 2-->
+        <div class="row BG-2">
+            <span class="col-md-1"></span>
+            <div onclick="News('new-3')" class="news col-md-4 d-flex justify-content-start">
+                <img class="i-news" src="imagens/L'edd.jpg" alt="">
+                <article class="tex">Lorem ipsum dolor sente-se no meio, consectetur elip adipiscing. 
+                Vivamus lacus mauris, condimento ac risus eget, fringilla vestibulum lorem. 
+                Nunc mollis turpis tellus, vitae sagittis leo.</article>   
+            </div>
+            <span class="col-md-1"></span>
+            <div onclick="News('new-4')" class="news col-md-4 d-flex justify-content-start">
+                <img class="i-news" src="imagens/Boku no Hero.jpg" alt="">
+                <article class="tex">Lorem ipsum dolor sente-se no meio, consectetur elip adipiscing. 
+                    Vivamus lacus mauris, condimento ac risus eget, fringilla vestibulum lorem. 
+                    Nunc mollis turpis tellus, vitae sagittis leo.</article>    
+            </div>
+            <span class="col-md-2"></span>
+        </div>
+
+        <!--Noticias linha 1 novamente-->
+        <div class="row BG">
+            <span class="col-md-1"></span>
+            <div onclick="News('new-1')" class="space news col-md-4 d-flex justify-content-start">
+                <img class="i-news" src="imagens/Ceifa.jpg" alt="">
+                <article class="tex">Lorem ipsum dolor sente-se no meio, consectetur elip adipiscing. 
+                Vivamus lacus mauris, condimento ac risus eget, fringilla vestibulum lorem. 
+                Nunc mollis turpis tellus, vitae sagittis leo.</article>   
+            </div>
+            <span class="col-md-1"></span>
+            <div onclick="News('new-2')" class="news col-md-4 d-flex justify-content-start">
+                <img class="i-news" src="imagens/Avatar.jpg" alt="">
+                <article class="tex">Lorem ipsum dolor sente-se no meio, consectetur elip adipiscing. 
+                    Vivamus lacus mauris, condimento ac risus eget, fringilla vestibulum lorem. 
+                    Nunc mollis turpis tellus, vitae sagittis leo.</article>    
+            </div>
+            <span class="col-md-2"></span>
+        </div>
+
+        <!--Noticias linha 2 novamente-->
+        <div class="row BG-2">
+            <span class="col-md-1"></span>
+            <div onclick="News('new-3')" class="news col-md-4 d-flex justify-content-start">
+                <img class="i-news" src="imagens/L'edd.jpg" alt="">
+                <article class="tex">Lorem ipsum dolor sente-se no meio, consectetur elip adipiscing. 
+                Vivamus lacus mauris, condimento ac risus eget, fringilla vestibulum lorem. 
+                Nunc mollis turpis tellus, vitae sagittis leo.</article>   
+            </div>
+            <span class="col-md-1"></span>
+            <div onclick="News('new-4')" class="news col-md-4 d-flex justify-content-start">
+                <img class="i-news" src="imagens/Boku no Hero.jpg" alt="">
+                <article class="tex">Lorem ipsum dolor sente-se no meio, consectetur elip adipiscing. 
+                    Vivamus lacus mauris, condimento ac risus eget, fringilla vestibulum lorem. 
+                    Nunc mollis turpis tellus, vitae sagittis leo.</article>    
+            </div>
+            <span class="col-md-2"></span>
+        </div>
+    </script>
+
+    <!--Script Novidade 1-->
+
+    <script type="text/HTML" id="new-1">
+        <div class="d-flex justify-content-around BG m-news">
+            <img class="i-news" src="imagens/Ceifa.jpg" alt="">
+            <hr style="border:2px solid lightgray; height:700px">
+            <article class="t-news">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel neque id metus placerat interdum vitae id ipsum. Vestibulum mattis leo euismod iaculis fermentum. Phasellus id risus vitae odio malesuada cursus et ut ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras suscipit euismod venenatis. Proin porta quam vitae nisi scelerisque blandit. Praesent mattis nibh justo, ac iaculis erat auctor a.
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Sed tempor mattis tincidunt. 
+                Aenean et gravida nisi. Ut diam libero, 
+                pulvinar ac cursus a, suscipit ac elit. 
+                Donec sed metus ut orci varius mollis a eu purus. 
+                Proin molestie suscipit diam et porta. 
+                Nullam mollis nisl nec neque viverra, 
+                a laoreet est vestibulum. 
+                Nunc non volutpat turpis, nec molestie lacus. 
+                Aliquam nec erat at ex tempus vestibulum. 
+                Nam nec purus gravida, bibendum nisi at, 
+                vestibulum ligula. Phasellus ullamcorper, 
+                nibh in sagittis lobortis, 
+                lorem enim sollicitudin nisi, 
+                auctor eleifend libero quam sed eros. 
+                Etiam congue interdum vehicula.
+                <br>
+                <br>
+                Ut egestas metus nunc, eget blandit odio commodo nec. 
+                Ut sit amet vehicula lacus, ac elementum purus. 
+                Donec eget elit eget mauris faucibus laoreet non sed libero. 
+                Curabitur a est ut erat tempor dapibus. 
+                Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                Curabitur et consectetur nibh. 
+                Vivamus at suscipit augue, id tristique justo. 
+                Aliquam condimentum et tellus rutrum congue. 
+                Pellentesque egestas sed nunc eget aliquet. 
+                Mauris mauris lectus, lacinia vitae diam in, 
+                sollicitudin venenatis velit.
+                <br>
+                <br>
+                In luctus nulla in massa luctus, 
+                nec lacinia urna tempor. 
+                In cursus velit ac orci ultrices, 
+                vel suscipit lacus malesuada. 
+                Vestibulum interdum tellus vitae lectus ultricies fermentum. 
+                Maecenas eget laoreet metus. 
+                Sed fermentum urna nec auctor ultricies. 
+                Fusce vitae dui quis orci congue volutpat id id justo. 
+                Orci varius natoque penatibus et magnis dis parturient montes, 
+                nascetur ridiculus mus.
+                <br>
+                <br>
+                Sed eget augue porta, 
+                mollis ante vitae, gravida nunc. 
+                Nulla laoreet accumsan tortor, 
+                at fringilla lacus vestibulum mattis. 
+                Nam ut magna nibh. 
+                Donec eleifend cursus arcu quis bibendum. 
+                Sed vulputate congue pretium. 
+                Pellentesque fermentum sapien a magna pharetra, 
+                ac blandit arcu suscipit. 
+                Nunc sollicitudin eget libero et fermentum. 
+                Integer ac tempor neque. 
+                Quisque bibendum placerat sem eu sodales. 
+                Sed ultricies congue arcu, 
+                iaculis blandit magna rhoncus vel. 
+                Nullam vel dolor fermentum, vehicula arcu a, 
+                rhoncus sapien. Quisque erat augue, 
+                finibus in feugiat in, rhoncus et felis. 
+                Quisque vitae nibh vitae odio ultrices venenatis in eu dui. 
+                Maecenas vitae maximus purus. 
+                Etiam feugiat ultricies tincidunt. 
+                Donec pulvinar euismod eros, 
+                nec ornare est aliquet nec.</article>
+        </div>
+
+    </script>
+
+    <!--Script Novidade 2-->
+
+    <script type="text/HTML" id="new-2">
+        <div class="d-flex justify-content-around BG m-news">
+            <img class="i-news" src="imagens/Avatar.jpg" alt="">
+            <hr style="border:2px solid lightgray; height:700px">
+            <article class="t-news">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel neque id metus placerat interdum vitae id ipsum. Vestibulum mattis leo euismod iaculis fermentum. Phasellus id risus vitae odio malesuada cursus et ut ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras suscipit euismod venenatis. Proin porta quam vitae nisi scelerisque blandit. Praesent mattis nibh justo, ac iaculis erat auctor a.
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Sed tempor mattis tincidunt. 
+                Aenean et gravida nisi. Ut diam libero, 
+                pulvinar ac cursus a, suscipit ac elit. 
+                Donec sed metus ut orci varius mollis a eu purus. 
+                Proin molestie suscipit diam et porta. 
+                Nullam mollis nisl nec neque viverra, 
+                a laoreet est vestibulum. 
+                Nunc non volutpat turpis, nec molestie lacus. 
+                Aliquam nec erat at ex tempus vestibulum. 
+                Nam nec purus gravida, bibendum nisi at, 
+                vestibulum ligula. Phasellus ullamcorper, 
+                nibh in sagittis lobortis, 
+                lorem enim sollicitudin nisi, 
+                auctor eleifend libero quam sed eros. 
+                Etiam congue interdum vehicula.
+                <br>
+                <br>
+                Ut egestas metus nunc, eget blandit odio commodo nec. 
+                Ut sit amet vehicula lacus, ac elementum purus. 
+                Donec eget elit eget mauris faucibus laoreet non sed libero. 
+                Curabitur a est ut erat tempor dapibus. 
+                Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                Curabitur et consectetur nibh. 
+                Vivamus at suscipit augue, id tristique justo. 
+                Aliquam condimentum et tellus rutrum congue. 
+                Pellentesque egestas sed nunc eget aliquet. 
+                Mauris mauris lectus, lacinia vitae diam in, 
+                sollicitudin venenatis velit.
+                <br>
+                <br>
+                In luctus nulla in massa luctus, 
+                nec lacinia urna tempor. 
+                In cursus velit ac orci ultrices, 
+                vel suscipit lacus malesuada. 
+                Vestibulum interdum tellus vitae lectus ultricies fermentum. 
+                Maecenas eget laoreet metus. 
+                Sed fermentum urna nec auctor ultricies. 
+                Fusce vitae dui quis orci congue volutpat id id justo. 
+                Orci varius natoque penatibus et magnis dis parturient montes, 
+                nascetur ridiculus mus.
+                <br>
+                <br>
+                Sed eget augue porta, 
+                mollis ante vitae, gravida nunc. 
+                Nulla laoreet accumsan tortor, 
+                at fringilla lacus vestibulum mattis. 
+                Nam ut magna nibh. 
+                Donec eleifend cursus arcu quis bibendum. 
+                Sed vulputate congue pretium. 
+                Pellentesque fermentum sapien a magna pharetra, 
+                ac blandit arcu suscipit. 
+                Nunc sollicitudin eget libero et fermentum. 
+                Integer ac tempor neque. 
+                Quisque bibendum placerat sem eu sodales. 
+                Sed ultricies congue arcu, 
+                iaculis blandit magna rhoncus vel. 
+                Nullam vel dolor fermentum, vehicula arcu a, 
+                rhoncus sapien. Quisque erat augue, 
+                finibus in feugiat in, rhoncus et felis. 
+                Quisque vitae nibh vitae odio ultrices venenatis in eu dui. 
+                Maecenas vitae maximus purus. 
+                Etiam feugiat ultricies tincidunt. 
+                Donec pulvinar euismod eros, 
+                nec ornare est aliquet nec.</article>
+        </div>
+    </script>
+
+    <!--Script Novidade 3-->
+
+    <script type="text/HTML" id="new-3">
+        <div class="d-flex justify-content-around BG m-news">
+            <img class="i-news" src="imagens/L'edd.jpg" alt="">
+            <hr style="border:2px solid lightgray; height:700px">
+            <article class="t-news">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel neque id metus placerat interdum vitae id ipsum. Vestibulum mattis leo euismod iaculis fermentum. Phasellus id risus vitae odio malesuada cursus et ut ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras suscipit euismod venenatis. Proin porta quam vitae nisi scelerisque blandit. Praesent mattis nibh justo, ac iaculis erat auctor a.
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Sed tempor mattis tincidunt. 
+                Aenean et gravida nisi. Ut diam libero, 
+                pulvinar ac cursus a, suscipit ac elit. 
+                Donec sed metus ut orci varius mollis a eu purus. 
+                Proin molestie suscipit diam et porta. 
+                Nullam mollis nisl nec neque viverra, 
+                a laoreet est vestibulum. 
+                Nunc non volutpat turpis, nec molestie lacus. 
+                Aliquam nec erat at ex tempus vestibulum. 
+                Nam nec purus gravida, bibendum nisi at, 
+                vestibulum ligula. Phasellus ullamcorper, 
+                nibh in sagittis lobortis, 
+                lorem enim sollicitudin nisi, 
+                auctor eleifend libero quam sed eros. 
+                Etiam congue interdum vehicula.
+                <br>
+                <br>
+                Ut egestas metus nunc, eget blandit odio commodo nec. 
+                Ut sit amet vehicula lacus, ac elementum purus. 
+                Donec eget elit eget mauris faucibus laoreet non sed libero. 
+                Curabitur a est ut erat tempor dapibus. 
+                Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                Curabitur et consectetur nibh. 
+                Vivamus at suscipit augue, id tristique justo. 
+                Aliquam condimentum et tellus rutrum congue. 
+                Pellentesque egestas sed nunc eget aliquet. 
+                Mauris mauris lectus, lacinia vitae diam in, 
+                sollicitudin venenatis velit.
+                <br>
+                <br>
+                In luctus nulla in massa luctus, 
+                nec lacinia urna tempor. 
+                In cursus velit ac orci ultrices, 
+                vel suscipit lacus malesuada. 
+                Vestibulum interdum tellus vitae lectus ultricies fermentum. 
+                Maecenas eget laoreet metus. 
+                Sed fermentum urna nec auctor ultricies. 
+                Fusce vitae dui quis orci congue volutpat id id justo. 
+                Orci varius natoque penatibus et magnis dis parturient montes, 
+                nascetur ridiculus mus.
+                <br>
+                <br>
+                Sed eget augue porta, 
+                mollis ante vitae, gravida nunc. 
+                Nulla laoreet accumsan tortor, 
+                at fringilla lacus vestibulum mattis. 
+                Nam ut magna nibh. 
+                Donec eleifend cursus arcu quis bibendum. 
+                Sed vulputate congue pretium. 
+                Pellentesque fermentum sapien a magna pharetra, 
+                ac blandit arcu suscipit. 
+                Nunc sollicitudin eget libero et fermentum. 
+                Integer ac tempor neque. 
+                Quisque bibendum placerat sem eu sodales. 
+                Sed ultricies congue arcu, 
+                iaculis blandit magna rhoncus vel. 
+                Nullam vel dolor fermentum, vehicula arcu a, 
+                rhoncus sapien. Quisque erat augue, 
+                finibus in feugiat in, rhoncus et felis. 
+                Quisque vitae nibh vitae odio ultrices venenatis in eu dui. 
+                Maecenas vitae maximus purus. 
+                Etiam feugiat ultricies tincidunt. 
+                Donec pulvinar euismod eros, 
+                nec ornare est aliquet nec.</article>
+        </div>
+    </script>
+
+    <!--Script Novidade 4-->
+
+    <script type="text/HTML" id="new-4">
+        <div class="d-flex justify-content-around BG m-news">
+            <img class="i-news" src="imagens/Boku no Hero.jpg" alt="">
+            <hr style="border:2px solid lightgray; height:700px">
+            <article class="t-news">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel neque id metus placerat interdum vitae id ipsum. Vestibulum mattis leo euismod iaculis fermentum. Phasellus id risus vitae odio malesuada cursus et ut ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras suscipit euismod venenatis. Proin porta quam vitae nisi scelerisque blandit. Praesent mattis nibh justo, ac iaculis erat auctor a.
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Sed tempor mattis tincidunt. 
+                Aenean et gravida nisi. Ut diam libero, 
+                pulvinar ac cursus a, suscipit ac elit. 
+                Donec sed metus ut orci varius mollis a eu purus. 
+                Proin molestie suscipit diam et porta. 
+                Nullam mollis nisl nec neque viverra, 
+                a laoreet est vestibulum. 
+                Nunc non volutpat turpis, nec molestie lacus. 
+                Aliquam nec erat at ex tempus vestibulum. 
+                Nam nec purus gravida, bibendum nisi at, 
+                vestibulum ligula. Phasellus ullamcorper, 
+                nibh in sagittis lobortis, 
+                lorem enim sollicitudin nisi, 
+                auctor eleifend libero quam sed eros. 
+                Etiam congue interdum vehicula.
+                <br>
+                <br>
+                Ut egestas metus nunc, eget blandit odio commodo nec. 
+                Ut sit amet vehicula lacus, ac elementum purus. 
+                Donec eget elit eget mauris faucibus laoreet non sed libero. 
+                Curabitur a est ut erat tempor dapibus. 
+                Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                Curabitur et consectetur nibh. 
+                Vivamus at suscipit augue, id tristique justo. 
+                Aliquam condimentum et tellus rutrum congue. 
+                Pellentesque egestas sed nunc eget aliquet. 
+                Mauris mauris lectus, lacinia vitae diam in, 
+                sollicitudin venenatis velit.
+                <br>
+                <br>
+                In luctus nulla in massa luctus, 
+                nec lacinia urna tempor. 
+                In cursus velit ac orci ultrices, 
+                vel suscipit lacus malesuada. 
+                Vestibulum interdum tellus vitae lectus ultricies fermentum. 
+                Maecenas eget laoreet metus. 
+                Sed fermentum urna nec auctor ultricies. 
+                Fusce vitae dui quis orci congue volutpat id id justo. 
+                Orci varius natoque penatibus et magnis dis parturient montes, 
+                nascetur ridiculus mus.
+                <br>
+                <br>
+                Sed eget augue porta, 
+                mollis ante vitae, gravida nunc. 
+                Nulla laoreet accumsan tortor, 
+                at fringilla lacus vestibulum mattis. 
+                Nam ut magna nibh. 
+                Donec eleifend cursus arcu quis bibendum. 
+                Sed vulputate congue pretium. 
+                Pellentesque fermentum sapien a magna pharetra, 
+                ac blandit arcu suscipit. 
+                Nunc sollicitudin eget libero et fermentum. 
+                Integer ac tempor neque. 
+                Quisque bibendum placerat sem eu sodales. 
+                Sed ultricies congue arcu, 
+                iaculis blandit magna rhoncus vel. 
+                Nullam vel dolor fermentum, vehicula arcu a, 
+                rhoncus sapien. Quisque erat augue, 
+                finibus in feugiat in, rhoncus et felis. 
+                Quisque vitae nibh vitae odio ultrices venenatis in eu dui. 
+                Maecenas vitae maximus purus. 
+                Etiam feugiat ultricies tincidunt. 
+                Donec pulvinar euismod eros, 
+                nec ornare est aliquet nec.</article>
+        </div>
+    </script>
+    <footer class="d-flex justify-content-around">
+        <h1>cosmics</h1>
+        <h1>Informações gerais do site</h1>
+        <h1>Contatos</h1>
+    </footer>
+</body>
+</html>
